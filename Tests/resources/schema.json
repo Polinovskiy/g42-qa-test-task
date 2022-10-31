@@ -1,0 +1,253 @@
+{
+  "type": "object",
+  "properties": {
+    "_index": {
+      "type": "string"
+    },
+    "_id": {
+      "type": "string"
+    },
+    "_score": {
+      "type": "number"
+    },
+    "_source": {
+      "type": "object",
+      "properties": {
+        "category": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "currency": {
+          "type": "string"
+        },
+        "customer_first_name": {
+          "type": "string"
+        },
+        "customer_full_name": {
+          "type": "string"
+        },
+        "customer_gender": {
+          "type": "string"
+        },
+        "customer_id": {
+          "type": "number"
+        },
+        "customer_last_name": {
+          "type": "string"
+        },
+        "customer_phone": {
+          "type": "string"
+        },
+        "day_of_week": {
+          "type": "string"
+        },
+        "day_of_week_i": {
+          "type": "number"
+        },
+        "email": {
+          "type": "string"
+        },
+        "manufacturer": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "order_date": {
+          "type": "string"
+        },
+        "order_id": {
+          "type": "number"
+        },
+        "products": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "base_price": {
+                "type": "number"
+              },
+              "discount_percentage": {
+                "type": "number"
+              },
+              "quantity": {
+                "type": "number"
+              },
+              "manufacturer": {
+                "type": "string"
+              },
+              "tax_amount": {
+                "type": "number"
+              },
+              "product_id": {
+                "type": "number"
+              },
+              "category": {
+                "type": "string"
+              },
+              "sku": {
+                "type": "string"
+              },
+              "taxless_price": {
+                "type": "number"
+              },
+              "unit_discount_amount": {
+                "type": "number"
+              },
+              "min_price": {
+                "type": "number"
+              },
+              "_id": {
+                "type": "string"
+              },
+              "discount_amount": {
+                "type": "number"
+              },
+              "created_on": {
+                "type": "string"
+              },
+              "product_name": {
+                "type": "string"
+              },
+              "price": {
+                "type": "number"
+              },
+              "taxful_price": {
+                "type": "number"
+              },
+              "base_unit_price": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "base_price",
+              "discount_percentage",
+              "quantity",
+              "manufacturer",
+              "tax_amount",
+              "product_id",
+              "category",
+              "sku",
+              "taxless_price",
+              "unit_discount_amount",
+              "min_price",
+              "_id",
+              "discount_amount",
+              "created_on",
+              "product_name",
+              "price",
+              "taxful_price",
+              "base_unit_price"
+            ]
+          }
+        },
+        "sku": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "taxful_total_price": {
+          "type": "number"
+        },
+        "taxless_total_price": {
+          "type": "number"
+        },
+        "total_quantity": {
+          "type": "number"
+        },
+        "total_unique_products": {
+          "type": "number"
+        },
+        "type": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "geoip": {
+          "type": "object",
+          "properties": {
+            "country_iso_code": {
+              "type": "string"
+            },
+            "location": {
+              "type": "object",
+              "properties": {
+                "lon": {
+                  "type": "number"
+                },
+                "lat": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "lon",
+                "lat"
+              ]
+            },
+            "region_name": {
+              "type": "string"
+            },
+            "continent_name": {
+              "type": "string"
+            },
+            "city_name": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "country_iso_code",
+            "location",
+            "continent_name"
+          ]
+        },
+        "event": {
+          "type": "object",
+          "properties": {
+            "dataset": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dataset"
+          ]
+        }
+      },
+      "required": [
+        "category",
+        "currency",
+        "customer_first_name",
+        "customer_full_name",
+        "customer_gender",
+        "customer_id",
+        "customer_last_name",
+        "customer_phone",
+        "day_of_week",
+        "day_of_week_i",
+        "email",
+        "manufacturer",
+        "order_date",
+        "order_id",
+        "products",
+        "sku",
+        "taxful_total_price",
+        "taxless_total_price",
+        "total_quantity",
+        "total_unique_products",
+        "type",
+        "user",
+        "geoip",
+        "event"
+      ]
+    }
+  },
+  "required": [
+    "_index",
+    "_id",
+    "_score",
+    "_source"
+  ]
+}
